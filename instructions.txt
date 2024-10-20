@@ -1,1 +1,1 @@
-
+Our webpage begins with an (index.html) featuring a welcoming message and a start button. Upon clicking the button, users are directed to the (ingredients.html) page, where they can select ingredients. After choosing their ingredients, clicking the "Find My Cuisine button" takes them to the (cuisines.html) page. The user will see pictures and click on one of those meals which contains 5 pages one link on each picture , which will provides ingredients and how to prepare it.
