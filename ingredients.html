@@ -6,7 +6,7 @@
         body{
             background-color: rgb(255, 125, 39, 0.93 );
         }
-        div{
+        .Ingerdient{
             background-color: #ffc400;
             text-align: center;
             width: 70%;
@@ -28,7 +28,8 @@
 	</style>
 </head>
 <body>
-   <form action="cuisines.html" method="post">
+   <div class="Ingerdient">
+	   <form action="cuisines.html" method="post">
     
 
             <h3>To Make Your Meale</h3>
@@ -64,11 +65,12 @@
             </select>
             
            
-            <input type="reset" value="Reset Ingerdients"/>
-            
-            <input type="submit" value="Find Recipe"/>
+           <input class="input" type="reset" value="Reset Ingerdients"/>
+        
+        <input class="input" type="submit"  value="Find Recipe"/>
    </form>
         
+   </div>
    
 </body>
 </html>
