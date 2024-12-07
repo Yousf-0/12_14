@@ -38,7 +38,7 @@
 
         <p><strong>First Select Your Ingredients</strong></p>
 	   
-             <select class="select-container">
+             <select class="select-container" id="ingredient1">
             
                 <option selected>Select Ingerdient</option>
                 <option>Meat</option>
@@ -48,7 +48,7 @@
                 
             </select>
                 
-               <select class="select-container">
+               <select class="select-container" id="ingredient2">
             
                 <option selected>Select Ingerdient</option>
                 <option>Rice</option>
@@ -56,7 +56,7 @@
                 <option>Pasta</option>
     
             </select>
-            <select class="select-container">
+            <select class="select-container" id="ingredient3">
            
                 <option selected>Select Ingerdient</option>
                 <option>Beans</option>
@@ -77,15 +77,41 @@
 	<script>
 		document.getElementById("myform").addEventListener("submit", function(event) {
 			
-			ingredient1 = document.getElementById("ingredient1").value;
-			ingredient2 = document.getElementById("ingredient2").value;
-			ingredient3 = document.getElementById("ingredient3").value;
+		ingredient1 = document.getElementById("ingredient1").value;
+		ingredient2 = document.getElementById("ingredient2").value;
+		ingredient3 = document.getElementById("ingredient3").value;
 
-			var xaction="";
+		var xaction="";
 
-			if(ingredient1 == "Meat" && ingredient2 == "Rice" && ingredient3 == "Potato")
-				xaction="mutton mandi.html";
-						
+		if(ingredient1 == "Meat" && ingredient2 == "Rice" && ingredient3 == "Potato")
+			xaction="mutton mandi.html";
+
+		else if (ingredient1 == "Chicken" && ingredient2 == "Pasta" && ingredient3 == "Potato") 
+			 xaction = "alfredo pasta.html";
+
+		else if (ingredient1 == "Fish" && ingredient2 == "Bread" && ingredient3 == "Potato") 
+			xaction = "fish & chips.html";
+			
+		else if (ingredient1 == "Chicken" && ingredient2 == "Select Ingerdient" && ingredient3 == "Potato") 
+			xaction = "fish & chips.html";
+
+
+		else if (ingredient1 == "Chicken" && ingredient2 == "Bread" && ingredient3 == "Hummus") 
+			actionn = "shawerma platter.html";
+
+			//
+
+		else if (ingredient1 == "Chicken" && ingredient2 == "Bread" && ingredient3 == "Hummus") 
+			xaction = "shawerma platter.html";
+			
+		else if (ingredient1 == "Chicken" && ingredient2 == "Bread" && ingredient3 == "Hummus") 
+			xaction = "shawerma platter.html";
+
+
+		this.action = xaction;
+			this.submit();
+		});
+		
 	</script>
    
 </body>
