@@ -31,7 +31,7 @@
 	
 <body>
    <div class="Ingerdient">
-	   <form action="cuisines.html" method="post">
+	   <form id = "myform" method="post">
     
 
             <h3>To Make Your Meale</h3>
@@ -73,6 +73,20 @@
    </form>
         
    </div>
+
+	<script>
+		document.getElementById("myform").addEventListener("submit", function(event) {
+			
+			ingredient1 = document.getElementById("ingredient1").value;
+			ingredient2 = document.getElementById("ingredient2").value;
+			ingredient3 = document.getElementById("ingredient3").value;
+
+			var xaction="";
+
+			if(ingredient1 == "Meat" && ingredient2 == "Rice" && ingredient3 == "Potato")
+				xaction="mutton mandi.html";
+						
+	</script>
    
 </body>
 </html>
