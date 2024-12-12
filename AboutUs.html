@@ -5,26 +5,63 @@
     <title>AboutUs</title>
     <style>
         body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             background-color: rgba(247, 165, 111, 0.922);
+            background-image: url("about.jpg");
+            background-size: cover;
+            color: white;
+            margin: 0;
+            padding: 0;
         }
-div{
+.about{
     position: relative;
+    margin-left: 20px;
     bottom: -20px;
-    color: rgb(64, 60, 60);
+    color: white;
 }
+ .call {
+    position: relative;
+    margin-top: 60px;
+ }
+
+ .NavigationBar {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    padding: 15px 0;
+}
+  
+.NavigationBar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .NavigationBar a:hover {
+            text-decoration: underline;
+        }
 
  
     </style>
 </head>
 <body>
-<div>
+
+    <div class="NavigationBar">
+        <a href="index.html">Home</a>
+        <a href="cuisines.html">All Cuisines</a>
+        <a href="Challenges.html">Challenges</a>
+        <a href="UserSuggestions.html">Suggestions</a>
+        <a href="AboutUs.html">About Us</a>
+    </div>
+
+<div class = "about">
     <h2>About Us</h2>
 <br><h3>Welcome to The Crafted Cuisine!</h3>
 
 <p1>At The Crafted Cuisine, our goal is to make cooking easier, 
 more enjoyable, and tailored to your unique needs. 
-Whether you're a seasoned chef or a beginner, 
-our platform is designed to help you find the perfect recipe based on what you have at home or what you're craving.
+Whether you're <br> a seasoned chef or a beginner, 
+our platform is designed to help you find the perfect recipe based on what you have at home or what you're craving.<br>
  We believe that anyone can create a delicious meal with the right guidance and inspiration.</p1>
 
  <h2><br>Our Purpose:</h2>
@@ -38,11 +75,11 @@ our platform is designed to help you find the perfect recipe based on what you h
 </ol>
 
 
-<p>The <strong>Crafted Cuisine</strong> aims to provide an intuitive, interactive platform that makes meal planning and preparation fun and accessible for everyone.
+<p>The <strong>Crafted Cuisine</strong> aims to provide an intuitive, interactive platform that makes meal planning and preparation fun and accessible<br> for everyone.
  Whether you're looking for quick dinners, special occasion dishes, or new ways to use pantry staples, we’ve got you covered!</p><br>
 
 
-    
+<div class = "call">   
   <p><sup>Contact Us</sup></p>
 
        <a href="https://www.instagram.com/crafted._cuisine/">
@@ -56,7 +93,7 @@ our platform is designed to help you find the perfect recipe based on what you h
 
         <a href="https://www.tiktok.com/@crafted_cuisine">
         <img src="https://www.citypng.com/public/uploads/preview/tik-tok-logo-icon-701751694793267gxetcvvp3v.png" alt = "tiktok" width = "50" height = "50" /></a>
-                        
+</div>                         
 
         </div>
  
