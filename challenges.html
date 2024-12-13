@@ -133,13 +133,15 @@ function generateDish() {
 
   // Display the random dish with its name
   const dishContainer = document.getElementById("dish-container");
-  dishContainer.innerHTML = `
-    <a href="${dish.page}">
-      <img src="${dish.image}" alt="${dish.name}" title="Go to ${dish.name}"><br><br>
-    </a>
-    <p>${dish.name}</p>
-  `;
+  var content =     '<a href="' + dish.page + '">' +
+    '<img src="' + dish.image + '" alt="' + dish.name + '" title="Go to ' + dish.name + '"><br><br>' +
+    '</a>' +
+    '<p>' + dish.name + '</p>';
+
+  dishContainer.innerHTML = content;
+  
 }
+
 
   </script>
 </body>
