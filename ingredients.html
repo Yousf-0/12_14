@@ -72,51 +72,8 @@
         }
 
     </style>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        document.getElementById("myform").addEventListener("submit", function (event) {
-            event.preventDefault();
 
-            const ingredient1 = document.getElementById("ingredient1").value;
-            const ingredient2 = document.getElementById("ingredient2").value;
-            const ingredient3 = document.getElementById("ingredient3").value;
 
-            let dish = "";
-
-            // Check the selected ingredients
-            if (
-                ingredient1 === "Meat" &&
-                ingredient2 === "Rice" &&
-                (ingredient3 === "Tomato" || ingredient3 === "Hummus" || ingredient3 === "Potato" || ingredient3 === "Select Ingredient")
-            ) {
-                dish = "mutton mandi.html"; // go to mutton mandi page
-            } else if (
-                ingredient1 === "Chicken" &&
-                ingredient2 === "Pasta" &&
-                (ingredient3 === "Tomato" || ingredient3 === "Hummus" || ingredient3 === "Potato" || ingredient3 === "Select Ingredient")
-            ) {
-                dish = "alfredo pasta.html"; // go to alfredo pasta page
-            } else if (
-                ingredient1 === "Fish" &&
-                (ingredient2 === "Rice" || ingredient2 === "Bread" || ingredient2 === "Pasta" || ingredient2 === "Select Ingredient") &&
-                ingredient3 === "Potato"
-            ) {
-                dish = "fish & chips.html"; // go to fish & chips page
-            } else if (ingredient1 === "Chicken" && ingredient2 === "Bread" && ingredient3 === "Tomato") {
-                dish = "ranch pizza.html"; // go to ranch pizza page
-            } else if (ingredient1 === "Chicken" && ingredient2 === "Bread" && ingredient3 === "Hummus") {
-                dish = "shawerma platter.html"; // go to shawerma platter page
-            }
-
-            if (dish) {
-                window.location.href = dish; 
-            }
-            else {
-                window.alert("No matching recipe found. Please refine your selection! ");
-            }
-        });
-    });
-</script>
 
 </head>
 
@@ -163,9 +120,50 @@
         </form>
     </div>
 
+<script>
+        document.getElementById("myform").addEventListener("submit", function (event) {
+            event.preventDefault();
 
-    
-    
+            const ingredient1 = document.getElementById("ingredient1").value;
+            const ingredient2 = document.getElementById("ingredient2").value;
+            const ingredient3 = document.getElementById("ingredient3").value;
 
+            let dish = "";
+
+            // Check the selected ingredients
+            if (
+                ingredient1 === "Meat" &&
+                ingredient2 === "Rice" &&
+                (ingredient3 === "Tomato" || ingredient3 === "Hummus" || ingredient3 === "Potato" || ingredient3 === "Select Ingredient")
+            ) {
+                dish = "mutton mandi.html"; // go to mutton mandi page
+            } else if (
+                ingredient1 === "Chicken" &&
+                ingredient2 === "Pasta" &&
+                (ingredient3 === "Tomato" || ingredient3 === "Hummus" || ingredient3 === "Potato" || ingredient3 === "Select Ingredient")
+            ) {
+                dish = "alfredo pasta.html"; // go to alfredo pasta page
+            } else if (
+                ingredient1 === "Fish" &&
+                (ingredient2 === "Rice" || ingredient2 === "Bread" || ingredient2 === "Pasta" || ingredient2 === "Select Ingredient") &&
+                ingredient3 === "Potato"
+            ) {
+                dish = "fish & chips.html"; // go to fish & chips page
+            } else if (ingredient1 === "Chicken" && ingredient2 === "Bread" && ingredient3 === "Tomato") {
+                dish = "ranch pizza.html"; // go to ranch pizza page
+            } else if (ingredient1 === "Chicken" && ingredient2 === "Bread" && ingredient3 === "Hummus") {
+                dish = "shawerma platter.html"; // go to shawerma platter page
+            }
+
+            if (dish) {
+                window.location.href = dish; 
+            }
+            else {
+                window.alert("No matching recipe found. Please refine your selection! ");
+            }
+        });
+</script>    
+    
 </body>
+
 </html>
